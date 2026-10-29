@@ -57,9 +57,12 @@ body {
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
-.brand img {
+.brand img,
+.site-footer img {
   display: block;
-  filter: brightness(0) invert(1);
+  max-width: 180px;
+  height: auto;
+  filter: none;
 }
 
 .desktop-nav {
@@ -441,7 +444,6 @@ body {
   text-align: center;
 }
 .site-footer img {
-  filter: brightness(0) invert(1);
   margin-bottom: 1rem;
 }
 
