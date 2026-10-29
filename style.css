@@ -442,9 +442,12 @@ body {
   padding: 3rem 0;
   text-align: center;
 }
+.brand img,
 .site-footer img {
-  filter: brightness(0) invert(1);
-  margin-bottom: 1rem;
+  display: block;
+  max-width: 180px;
+  height: auto;
+  filter: none;
 }
 
 /* Animations */
