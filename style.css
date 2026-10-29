@@ -420,10 +420,12 @@ body {
   gap: 0.5rem;
   font-weight: 500;
 }
-.contact-form input, .contact-form select, .contact-form textarea {
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
   padding: 0.8rem;
   border: 1px solid #ddd;
-  L-radius: 5px;
+  border-radius: 5px;
   font-family: inherit;
 }
 .form-button {
