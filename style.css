@@ -442,8 +442,7 @@ body {
   padding: 3rem 0;
   text-align: center;
 }
-.brand img,
-.site-footer img {
+.brand img {
   display: block;
   max-width: 180px;
   height: auto;
