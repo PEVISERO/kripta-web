@@ -37,18 +37,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Gestión del Formulario de Contacto (Simulación de envío)
+  // 4. Gestión del Formulario de Contacto (Envío vía WhatsApp)
   const contactForm = document.querySelector('[data-contact-form]');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const formData = new FormData(contactForm);
       const nombre = formData.get('nombre');
+      const empresa = formData.get('empresa');
       const telefono = formData.get('telefono');
+      const email = formData.get('email');
+      const mensaje = formData.get('mensaje');
       
-      // Redirección a WhatsApp con mensaje predefinido
-      const message = `Hola KRIPTA, mi nombre es ${nombre}. Mi teléfono es ${telefono}. Me gustaría solicitar más información sobre la gestión de casos.`;
-      const whatsappUrl = `https://wa.me/573172791305?text=${encodeURIComponent(message)}`;
+      // Construcción del mensaje para WhatsApp con el numero correcto
+      const text = `Hola KRIPTA, me interesa solicitar una evaluación.\n\n` +
+                    `*Nombre:* ${nombre}\n` +
+                    `*Empresa:* ${empresa}\n` +
+                    `*WhatsApp:* ${telefono}\n` +
+                    `*Email:* ${email}\n` +
+                    `*Mensaje:* ${mensaje}`;
+      
+      const whatsappUrl = `https://wa.me/573172791305?text=${encodeURIComponent(text)}`;
       
       window.open(whatsappUrl, '_blank');
     });
