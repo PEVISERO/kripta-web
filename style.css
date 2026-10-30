@@ -47,6 +47,14 @@ a {
   color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(201, 164, 108, 0.9);
+  outline-offset: 3px;
+}
+
 /* Accesibilidad */
 .skip-link {
   position: absolute;
@@ -184,7 +192,7 @@ a {
   overflow: hidden;
   background:
     linear-gradient(135deg, rgba(11,18,32,0.76), rgba(27,42,63,0.84)),
-    url('') center/cover no-repeat var(--bg-dark);
+    var(--bg-dark) center/cover no-repeat;
 }
 .hero-overlay {
   position: absolute;
