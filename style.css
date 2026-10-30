@@ -282,6 +282,19 @@ body {
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
+.service-card h4,
+.service-card p {
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.6;
+}
+.service-card h4 {
+  margin: 1rem 0 0.75rem;
+  font-size: 1rem;
+}
+.service-card p {
+  margin-bottom: 0.75rem;
+}
 .service-card ul {
   list-style: none;
   padding: 0;
