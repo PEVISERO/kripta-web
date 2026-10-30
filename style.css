@@ -273,13 +273,15 @@ textarea:focus-visible {
   box-shadow: 0 22px 38px rgba(201, 164, 108, 0.26);
 }
 .btn-secondary {
-  background: transparent;
-  color: var(--white);
-  border: 1px solid rgba(255,255,255,0.38);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(201, 164, 108, 0.9);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
 }
 .btn-secondary:hover {
-  background: rgba(255,255,255,0.04);
-  color: var(--white);
+  background: rgba(201, 164, 108, 0.12);
+  color: #ffffff;
+  border-color: rgba(201, 164, 108, 1);
 }
 
 /* Sections */
